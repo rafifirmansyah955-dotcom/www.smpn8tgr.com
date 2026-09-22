@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP Negeri 8 Tenggarong - Situs Resmi Sekolah</title>
+    
+    <!-- Favicon using Official Logo -->
+    <link rel="icon" type="image/png" href="input_file_0.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            600: '#1e3a8a',
+                            700: '#1d3557',
+                            800: '#152c4f',
+                            900: '#0f172a',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 58, 138, 0.85) 50%, rgba(4, 120, 87, 0.80) 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 dark:text-slate-100 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-navy-900 text-slate-200 text-xs py-2 px-4 sm:px-8 border-b border-navy-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center md:justify-start">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-school text-gold-400"></i> NPSN: 30400030</span>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-certificate text-emerald-500"></i> Akreditasi A</span>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-book-bookmark text-gold-400"></i> Kurikulum Merdeka</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:smpn8tenggarongseberang@gmail.com" class="hover:text-gold-400 transition flex items-center gap-1">
+                    <i class="fa-regular fa-envelope"></i> smpn8tenggarongseberang@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 glass-nav border-b border-slate-200 dark:border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                
+                <!-- School Logo & Name -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    <div class="w-12 h-14 bg-white p-1 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 flex items-center justify-center group-hover:scale-105 transition transform">
+                        <img src="input_file_0.png" alt="Logo SMP Negeri 8 Tenggarong" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div>
+                        <span class="block font-extrabold text-lg sm:text-xl text-navy-600 dark:text-white leading-tight tracking-tight">
+                            SMPN 8 TENGGARONG
+                        </span>
+                        <span class="block text-xs text-slate-500 dark:text-slate-400 font-medium">Kab. Kutai Kartanegara</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-1 xl:space-x-2 text-sm font-semibold">
+                    <a href="#beranda" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Beranda</a>
+                    <a href="#profil" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Profil Sekolah</a>
+                    <a href="#visi-misi" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Visi & Misi</a>
+                    <a href="#fasilitas" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Fasilitas</a>
+                    <a href="#ekstrakurikuler" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Ekstrakurikuler</a>
+                    <a href="#pengumuman" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Pengumuman</a>
+                    <a href="#galeri" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Galeri</a>
+                    <a href="#kontak" class="px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:text-navy-600 dark:hover:text-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Kontak</a>
+                </div>
+
+                <!-- Action Controls -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button id="themeToggle" class="p-2.5 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition" title="Toggle Tema Light/Dark">
+                        <i class="fa-solid fa-moon dark:hidden text-slate-700"></i>
+                        <i class="fa-solid fa-sun hidden dark:block text-gold-400"></i>
+                    </button>
+                    <a href="#kontak" class="px-5 py-2.5 rounded-full bg-navy-600 hover:bg-navy-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <button id="themeToggleMobile" class="p-2 rounded-lg text-slate-600 dark:text-slate-300">
+                        <i class="fa-solid fa-moon dark:hidden"></i>
+                        <i class="fa-solid fa-sun hidden dark:block text-gold-400"></i>
+                    </button>
+                    <button id="mobileMenuBtn" class="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="#beranda" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
+            <a href="#profil" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Profil Sekolah</a>
+            <a href="#visi-misi" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Visi & Misi</a>
+            <a href="#fasilitas" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Fasilitas</a>
+            <a href="#ekstrakurikuler" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Ekstrakurikuler</a>
+            <a href="#pengumuman" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Pengumuman & Berita</a>
+            <a href="#galeri" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Galeri Foto</a>
+            <a href="#kontak" class="mobile-nav-link block px-3 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative min-h-[640px] lg:min-h-[700px] flex items-center justify-center overflow-hidden bg-slate-900 text-white">
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop" 
+             alt="SMP Negeri 8 Tenggarong Building" 
+             class="absolute inset-0 w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 hero-gradient"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
+            
+            <!-- Hero Logo Display -->
+            <div class="mb-6 flex justify-center">
+                <div class="w-32 h-36 p-3 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border-4 border-white/60 transform hover:scale-105 transition duration-300 flex items-center justify-center">
+                    <img src="input_file_0.png" alt="Logo Resmi SMP Negeri 8 Tenggarong" class="max-h-full max-w-full object-contain">
+                </div>
+            </div>
+
+            <span class="inline-block px-4 py-1.5 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/30 text-emerald-300 font-bold text-xs sm:text-sm rounded-full mb-4 tracking-wider uppercase">
+                 Portal Web Resmi Sekolah
+            </span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+                SMP NEGERI 8 TENGGARONG
+            </h1>
+            <p class="text-base sm:text-xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed mb-8">
+                Membentuk generasi yang berakhlak mulia, cerdas, berprestasi, dan berwawasan lingkungan di Kabupaten Kutai Kartanegara.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#profil" class="w-full sm:w-auto px-8 py-4 bg-gold-500 hover:bg-gold-400 text-slate-900 font-extrabold rounded-full shadow-xl hover:shadow-2xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-compass"></i> Jelajahi Profil Sekolah
+                </a>
+                <a href="#kontak" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-white font-bold rounded-full transition flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-map-pin"></i> Lokasi & Kontak
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Counter Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 border border-slate-100 dark:border-slate-700">
+            <div class="p-4 text-center border-r border-slate-100 dark:border-slate-700 last:border-0">
+                <div class="text-emerald-600 dark:text-emerald-400 text-3xl mb-2"><i class="fa-solid fa-user-graduate"></i></div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-navy-600 dark:text-white">400+</div>
+                <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">Siswa - Siswi</div>
+            </div>
+            <div class="p-4 text-center md:border-r border-slate-100 dark:border-slate-700">
+                <div class="text-navy-600 dark:text-blue-400 text-3xl mb-2"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-navy-600 dark:text-white">28+</div>
+                <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">Guru & Pendidik</div>
+            </div>
+            <div class="p-4 text-center border-r border-slate-100 dark:border-slate-700">
+                <div class="text-gold-500 text-3xl mb-2"><i class="fa-solid fa-door-open"></i></div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-navy-600 dark:text-white">12</div>
+                <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">Rombongan Belajar</div>
+            </div>
+            <div class="p-4 text-center">
+                <div class="text-purple-500 text-3xl mb-2"><i class="fa-solid fa-award"></i></div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-navy-600 dark:text-white">A</div>
+                <div class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-1">Akreditasi BAN-S/M</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Sekolah -->
+    <section id="profil" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column: Image with Logo Overlay -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop" 
+                         alt="Gedung SMPN 8 Tenggarong" 
+                         class="w-full h-[420px] object-cover hover:scale-105 transition duration-500">
+                </div>
+                
+                <!-- Official Logo Badge Overlay -->
+                <div class="absolute -bottom-6 -right-4 z-20 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3">
+                    <div class="w-14 h-16 shrink-0 flex items-center justify-center">
+                        <img src="input_file_0.png" alt="Logo SMP Negeri 8 Tenggarong" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">SMPN 8 Tenggarong</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Jl. AP Mangkunegara, Teluk Dalam</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Details -->
+            <div class="lg:col-span-7">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Tentang Sekolah</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-600 dark:text-white mt-2 mb-6">
+                    Mendidik dengan Hati, Membentuk Generasi Berkarakter
+                </h2>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                    <strong>SMP Negeri 8 Tenggarong</strong> merupakan Sekolah Menengah Pertama Negeri yang bertempat di Desa Teluk Dalam, Kecamatan Tenggarong Seberang, Kabupaten Kutai Kartanegara, Kalimantan Timur.
+                </p>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+                    Dengan komitmen tinggi pada mutu pendidikan, sekolah ini memadukan **Kurikulum Merdeka** berbasis pengembangan karakter Pancasila, keahlian akademis, pembinaan seni budaya daerah Kutai, serta aksi kelestarian lingkungan hidup.
+                </p>
+
+                <!-- Key Data Specs -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2.5 bg-navy-50 dark:bg-slate-800 text-navy-600 dark:text-emerald-400 rounded-lg">
+                            <i class="fa-solid fa-id-card text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">NPSN</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">30400030</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2.5 bg-navy-50 dark:bg-slate-800 text-navy-600 dark:text-emerald-400 rounded-lg">
+                            <i class="fa-solid fa-award text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">Akreditasi</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Peringkat A (Sangat Baik)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2.5 bg-navy-50 dark:bg-slate-800 text-navy-600 dark:text-emerald-400 rounded-lg">
+                            <i class="fa-solid fa-location-dot text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">Alamat Utama</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Jl. AP Mangkunegara, Teluk Dalam, Tenggarong Seberang</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2.5 bg-navy-50 dark:bg-slate-800 text-navy-600 dark:text-emerald-400 rounded-lg">
+                            <i class="fa-solid fa-building-columns text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800 dark:text-slate-200">Status Sekolah</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Negeri (Pemerintah Kab. Kutai Kartanegara)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Visi & Misi Section -->
+    <section id="visi-misi" class="py-20 bg-slate-100 dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Arah & Pedoman</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-600 dark:text-white mt-2">Visi & Misi Sekolah</h2>
+                <p class="text-slate-500 dark:text-slate-400 mt-3">Prinsip utama penyelenggaraan pendidikan berkualitas di SMPN 8 Tenggarong.</p>
+            </div>
+
+            <!-- Interactive Tab Buttons -->
+            <div class="flex justify-center gap-3 mb-8">
+                <button onclick="switchTab('visi')" id="tab-visi" class="px-6 py-3 rounded-full font-bold text-sm transition shadow-md bg-navy-600 text-white">
+                    <i class="fa-solid fa-eye me-2"></i> Visi Sekolah
+                </button>
+                <button onclick="switchTab('misi')" id="tab-misi" class="px-6 py-3 rounded-full font-bold text-sm transition shadow-md bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200">
+                    <i class="fa-solid fa-bullseye me-2"></i> Misi Sekolah
+                </button>
+            </div>
+
+            <!-- Content Card -->
+            <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200 dark:border-slate-700 min-h-[240px]">
+                
+                <!-- Visi Content -->
+                <div id="content-visi" class="space-y-4">
+                    <div class="inline-flex items-center gap-2 text-gold-500 text-lg font-bold mb-2">
+                        <i class="fa-solid fa-quote-left"></i> VISI SMP NEGERI 8 TENGGARONG
+                    </div>
+                    <blockquote class="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-slate-100 leading-snug">
+                        "Terwujudnya Peserta Didik yang Bertaqwa, Berakhlak Mulia, Cerdas, Berprestasi, serta Berwawasan Lingkungan Berlandaskan Profil Pelajar Pancasila."
+                    </blockquote>
+                </div>
+
+                <!-- Misi Content -->
+                <div id="content-misi" class="hidden space-y-4">
+                    <h3 class="text-xl font-bold text-navy-600 dark:text-white mb-4"><i class="fa-solid fa-list-check text-emerald-500 me-2"></i> Misi Utama Sekolah</h3>
+                    <ul class="grid md:grid-cols-2 gap-4 text-slate-700 dark:text-slate-300">
+                        <li class="flex items-start gap-3 bg-slate-50 dark:bg-slate-900/50 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Menumbuhkan keimanan dan ketaqwaan kepada Tuhan Yang Maha Esa dalam setiap aspek kehidupan sekolah.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 dark:bg-slate-900/50 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Mewujudkan proses belajar mengajar yang efektif, aktif, dan inovatif sesuai prinsip Kurikulum Merdeka.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 dark:bg-slate-900/50 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Mengembangkan minat, bakat, serta potensi akademik dan non-akademik peserta didik secara maksimal.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-slate-50 dark:bg-slate-900/50 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                            <span>Mewujudkan lingkungan sekolah yang asri, bersih, sehat, dan berbudaya ramah anak.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Sarana Pembelajaran</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-600 dark:text-white mt-2">Fasilitas Utama Sekolah</h2>
+            <p class="text-slate-500 dark:text-slate-400 mt-2">Sarana pendukung kegiatan belajar mengajar yang memadai dan ramah siswa.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-xl transition">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3 class="font-bold text-slate-800 dark:text-white text-lg mb-2">Laboratorium Komputer</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Ruang lab komputer berpendingin udara dengan akses internet cepat untuk ANBK dan literasi digital.</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-xl transition">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-flask"></i></div>
+                <h3 class="font-bold text-slate-800 dark:text-white text-lg mb-2">Laboratorium IPA</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Peralatan eksperimen sains modern untuk mendukung praktik Fisika, Biologi, dan Kimia dasar.</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-xl transition">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-book"></i></div>
+                <h3 class="font-bold text-slate-800 dark:text-white text-lg mb-2">Perpustakaan Digital</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Koleksi buku pelajaran lengkap, bacaan umum, literasi digital, dan area ruang baca yang nyaman.</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-700 hover:shadow-xl transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-futbol"></i></div>
+                <h3 class="font-bold text-slate-800 dark:text-white text-lg mb-2">Lapangan Olahraga</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Lapangan multifungsi untuk kegiatan Upacara Bendera, Futsal, Bola Voli, dan Basket.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ekstrakurikuler Section -->
+    <section id="ekstrakurikuler" class="py-20 bg-slate-100 dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Pengembangan Bakat</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-600 dark:text-white mt-2">Kegiatan Ekstrakurikuler</h2>
+                <p class="text-slate-500 dark:text-slate-400 mt-2">Wadah pengembangan minat, kedisiplinan, dan potensi diri siswa.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-campground"></i></div>
+                    <h3 class="text-lg font-bold text-navy-600 dark:text-white mb-2">Pramuka (Gugus Depan)</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Membentuk jiwa kepemimpinan, kepramukaan, dan kemandirian siswa secara berkelanjutan.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-notes-medical"></i></div>
+                    <h3 class="text-lg font-bold text-navy-600 dark:text-white mb-2">PMR & UKS</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Melatih pertolongan pertama, kepedulian sosial kemanusiaan, serta kesehatan sekolah.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-masks-theater"></i></div>
+                    <h3 class="text-lg font-bold text-navy-600 dark:text-white mb-2">Seni & Tari Kutai</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Melestarikan kesenian tarian tradisional khas Kabupaten Kutai Kartanegara.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-trophy"></i></div>
+                    <h3 class="text-lg font-bold text-navy-600 dark:text-white mb-2">Olahraga Prestasi</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Pembinaan atlet muda bidang Voli, Futsal, dan Bulutangkis untuk ajang O2SN.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-microscope"></i></div>
+                    <h3 class="text-lg font-bold text-navy-600 dark:text-white mb-2">KIR (Karya Ilmiah Remaja)</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Mendorong kemampuan meneliti, bernalar kritis, dan inovasi sains tingkat SMP.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-seedling"></i></div>
+                    <h3 class="text-lg font-bold text-navy-600 dark:text-white mb-2">Kader Lanjutan Lingkungan (Adiwiyata)</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Pelatihan pengelolaan sampah, apotek hidup, dan penghijauan kawasan sekolah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengumuman & Berita Section -->
+    <section id="pengumuman" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Informasi Terkini</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-600 dark:text-white mt-2">Pengumuman & Berita</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex justify-center flex-wrap gap-2 mb-10">
+            <button onclick="filterNews('all')" class="news-filter-btn active px-4 py-2 rounded-full text-xs font-bold transition bg-navy-600 text-white">Semua</button>
+            <button onclick="filterNews('pengumuman')" class="news-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300">Pengumuman</button>
+            <button onclick="filterNews('prestasi')" class="news-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300">Prestasi</button>
+            <button onclick="filterNews('kegiatan')" class="news-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300">Kegiatan</button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="news-card item-pengumuman bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700">
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-[11px] font-bold rounded-full mb-3">Pengumuman</span>
+                    <h3 class="font-bold text-slate-800 dark:text-white text-base mb-2">Pelaksanaan Asesmen Nasional Berbasis Komputer (ANBK)</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Jadwal pelaksanaan simulasidan gladi bersih ANBK bagi peserta didik kelas VIII diselenggarakan di Lab Komputer.</p>
+                    <div class="text-[11px] text-slate-400 flex items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i> 18 September 2026
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card item-prestasi bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700">
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-[11px] font-bold rounded-full mb-3">Prestasi</span>
+                    <h3 class="font-bold text-slate-800 dark:text-white text-base mb-2">Juara FLS2N Tingkat Kabupaten Kukar</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Siswa-siswi SMPN 8 Tenggarong berhasil meraih penghargaan pada ajang Festival Seni Siswa Nasional.</p>
+                    <div class="text-[11px] text-slate-400 flex items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i> 10 September 2026
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card item-kegiatan bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700">
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-[11px] font-bold rounded-full mb-3">Kegiatan</span>
+                    <h3 class="font-bold text-slate-800 dark:text-white text-base mb-2">Peringatan Hari Kemerdekaan & Pentas Seni Kutai</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">Kemeriahan perlombaan tradisional dan pertunjukkan kesenian daerah oleh seluruh kelas.</p>
+                    <div class="text-[11px] text-slate-400 flex items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i> 17 Agustus 2026
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="py-20 bg-slate-100 dark:bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Dokumentasi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-600 dark:text-white mt-2">Galeri Kegiatan Sekolah</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative group cursor-pointer overflow-hidden rounded-2xl h-56 bg-slate-200" onclick="openGalleryModal('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop', 'Suasana Pembelajaran Interaktif di Kelas')">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Pembelajaran">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-semibold text-xs p-2 text-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-xl mb-1 block"></i> Pembelajaran Kelas
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer overflow-hidden rounded-2xl h-56 bg-slate-200" onclick="openGalleryModal('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1200&auto=format&fit=crop', 'Upacara Bendera Khidmat Hari Senin')">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Upacara">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-semibold text-xs p-2 text-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-xl mb-1 block"></i> Upacara Bendera
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer overflow-hidden rounded-2xl h-56 bg-slate-200" onclick="openGalleryModal('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop', 'Kegiatan Ekstrakurikuler Olahraga')">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Olahraga">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-semibold text-xs p-2 text-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-xl mb-1 block"></i> Ekstrakurikuler Olahraga
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer overflow-hidden rounded-2xl h-56 bg-slate-200" onclick="openGalleryModal('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop', 'Layanan Perpustakaan & Membaca Bersama')">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Perpustakaan">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-semibold text-xs p-2 text-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-xl mb-1 block"></i> Perpustakaan
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Lokasi Section -->
+    <section id="kontak" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <!-- Left Info Panel -->
+            <div class="lg:col-span-5 space-y-6">
+                <div>
+                    <span class="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-wider uppercase">Hubungi Kami</span>
+                    <h2 class="text-3xl font-extrabold text-navy-600 dark:text-white mt-1">Informasi Lokasi & Kontak</h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="w-10 h-10 rounded-xl bg-navy-100 text-navy-600 flex items-center justify-center shrink-0"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">Alamat Sekolah</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Jl. AP Mangkunegara, Teluk Dalam, Kec. Tenggarong Seberang, Kabupaten Kutai Kartanegara, Kalimantan Timur</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">Email Resmi</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">smpn8tenggarongseberang@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-500 flex items-center justify-center shrink-0"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">Jam Operasional Kantor</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Senin - Kamis: 07.30 – 14.00 WITA<br>Jumat: 07.30 – 11.30 WITA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embedded -->
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 h-64">
+                    <iframe 
+                        title="Peta Lokasi SMPN 8 Tenggarong" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.82662058356!2d117.000000!3d-0.450000!2m3!1f0!0f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6f50b0ad76113%3A0xd9a8b621a8f1aa89!2sSMPN%208%20TENGGARONG!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Right Message Form -->
+            <div class="lg:col-span-7 bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700">
+                <h3 class="text-xl font-bold text-navy-600 dark:text-white mb-2">Buku Tamu / Kirim Pesan</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-6">Silakan tinggalkan pertanyaan atau tanggapan Anda untuk pihak sekolah.</p>
+                <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Nama Lengkap</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-900 text-sm focus:ring-2 focus:ring-navy-600 outline-none" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Nomor WhatsApp / HP</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-900 text-sm focus:ring-2 focus:ring-navy-600 outline-none" placeholder="08xxxxxxxxxx">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Pesan / Masukan</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-900 text-sm focus:ring-2 focus:ring-navy-600 outline-none" placeholder="Tuliskan pesan Anda secara lengkap..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 bg-navy-600 hover:bg-navy-700 text-white font-bold rounded-xl text-sm transition shadow-md">
+                        <i class="fa-solid fa-paper-plane me-2"></i> Kirim Pesan Sekarang
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-300 pt-16 pb-8 border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-14 bg-white p-1 rounded-xl flex items-center justify-center shrink-0">
+                            <img src="input_file_0.png" alt="Logo SMP Negeri 8 Tenggarong" class="max-h-full max-w-full object-contain">
+                        </div>
+                        <span class="font-extrabold text-xl text-white">SMP NEGERI 8 TENGGARONG</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+                        Satuan Pendidikan Formal Jenjang SMP Negeri di Kecamatan Tenggarong Seberang, Kabupaten Kutai Kartanegara, Provinsi Kalimantan Timur.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Pintasan Navigasi</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#profil" class="hover:text-gold-400 transition">Profil Sekolah</a></li>
+                        <li><a href="#visi-misi" class="hover:text-gold-400 transition">Visi & Misi</a></li>
+                        <li><a href="#fasilitas" class="hover:text-gold-400 transition">Fasilitas</a></li>
+                        <li><a href="#ekstrakurikuler" class="hover:text-gold-400 transition">Ekstrakurikuler</a></li>
+                        <li><a href="#kontak" class="hover:text-gold-400 transition">Kontak & Lokasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Identitas Resmi</h4>
+                    <p class="text-xs text-slate-400">NPSN: 30400030</p>
+                    <p class="text-xs text-slate-400 mt-1">Akreditasi: A (BAN-S/M)</p>
+                    <p class="text-xs text-slate-400 mt-1">Kurikulum: Kurikulum Merdeka</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-navy-800 text-center text-xs text-slate-500">
+                <p>&copy; 2026 SMP Negeri 8 Tenggarong. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="infoModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-2xl w-full p-6 shadow-2xl relative">
+            <button onclick="closeInfoModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white text-2xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modalTitle" class="text-lg font-bold text-navy-600 dark:text-white mb-3">Detail Foto</h3>
+            <div id="modalContent" class="text-sm text-slate-600 dark:text-slate-300"></div>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle Handler
+        const themeToggleBtns = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')];
+        themeToggleBtns.forEach(btn => {
+            if (btn) {
+                btn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                });
+            }
+        });
+
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+        }
+
+        // Visi & Misi Tab Switcher
+        function switchTab(tabName) {
+            const tabs = ['visi', 'misi'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tab-${t}`);
+                const content = document.getElementById(`content-${t}`);
+                if (t === tabName) {
+                    btn.className = "px-6 py-3 rounded-full font-bold text-sm transition shadow-md bg-navy-600 text-white";
+                    content.classList.remove('hidden');
+                } else {
+                    btn.className = "px-6 py-3 rounded-full font-bold text-sm transition shadow-md bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200";
+                    content.classList.add('hidden');
+                }
+            });
+        }
+
+        // News Filter Handler
+        function filterNews(category) {
+            const cards = document.querySelectorAll('.news-card');
+            const filterBtns = document.querySelectorAll('.news-filter-btn');
+            
+            filterBtns.forEach(btn => {
+                btn.className = "news-filter-btn px-4 py-2 rounded-full text-xs font-bold transition bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300";
+            });
+            event.target.className = "news-filter-btn active px-4 py-2 rounded-full text-xs font-bold transition bg-navy-600 text-white";
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(`item-${category}`)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox Gallery Modal Handler
+        function openGalleryModal(imgSrc, caption) {
+            document.getElementById('modalTitle').innerText = caption;
+            document.getElementById('modalContent').innerHTML = `
+                <img src="${imgSrc}" class="w-full h-80 object-cover rounded-xl mb-3 shadow-md" alt="${caption}">
+                <p class="text-xs text-slate-500 dark:text-slate-400"><i class="fa-solid fa-camera me-1"></i> ${caption}</p>
+            `;
+            document.getElementById('infoModal').classList.remove('hidden');
+        }
+
+        function closeInfoModal() {
+            document.getElementById('infoModal').classList.add('hidden');
+        }
+
+        // Form Submission Feedback
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirimkan ke pihak SMP Negeri 8 Tenggarong.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
